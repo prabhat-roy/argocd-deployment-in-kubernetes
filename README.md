@@ -1,1 +1,1 @@
-ArgoCD Continuous Delivery
+ArgoCD Continuous Delivery to Kubernetes
