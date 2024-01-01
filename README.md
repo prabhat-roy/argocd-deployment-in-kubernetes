@@ -1,1 +1,1 @@
-ArgoCD Continuous Delivery to Kubernetes
+Java Application deployment to Kubernetes through Jenkins & ArgoCD.

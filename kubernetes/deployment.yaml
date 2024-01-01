@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spring-boot
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      run: spring-boot
+  template:
+    metadata:
+      labels:
+        run: spring-boot
+    spec:
+      imagePullSecrets:
+      - name: project-a
+      containers:
+      - name: spring-boot
+        image: 10.0.1.3:8082/image:37
+        ports:
+          - containerPort: 8080
+        imagePullPolicy: IfNotPresent
